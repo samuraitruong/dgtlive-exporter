@@ -121,9 +121,10 @@ async function main() {
   // cjs id
   const bobHounourableID = "acf4f63a-c6d5-4943-99c3-9837e099c949";
   const cjsPurdyCupID = "63d56a4e-1f21-4adc-a021-1259bcb38b27";
+  const cjsPurdyCupSeniorID = "50bf1956-ea74-4631-9b00-cfdbace58111";
   await fetchMe(cjsPurdyCupID);
   // Senior
-  // await fetchMe("babfc4d8-78a4-4455-81b1-ac459399ee30");
+  await fetchMe(cjsPurdyCupSeniorID);
 }
 
 main();
