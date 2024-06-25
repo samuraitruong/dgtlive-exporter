@@ -72,7 +72,7 @@ function generatePgn(tournament, pair, game) {
 
   const pgn = `
     [Event "${tournament.name}"]
-    [Site "${tournament.location || "Hobsons Bay Chess Club"}]
+    [Site "${tournament.location || "Hobsons Bay Chess Club"}"]
     [White "${pair.white.lname},${pair.white.fname}"]
     [Black "${pair.black.lname},${pair.black.fname}"]
     [BlackElo ""]
@@ -120,11 +120,16 @@ async function main() {
   // Junior
   // cjs id
   const bobHounourableID = "acf4f63a-c6d5-4943-99c3-9837e099c949";
-  const cjsPurdyCupID = "63d56a4e-1f21-4adc-a021-1259bcb38b27";
+  const cjsPurdyCupID = "61237ec1-eccf-48f0-a09f-d27f87c5efdb";// "63d56a4e-1f21-4adc-a021-1259bcb38b27";
   const cjsPurdyCupSeniorID = "50bf1956-ea74-4631-9b00-cfdbace58111";
-  await fetchMe(cjsPurdyCupID);
+  const westernAutumnJuniorID = 'a2db6c95-c4d9-4299-ae52-a002c596392b'
+  const SeniorWesternMasterID = '51fccfbc-41bc-4118-b205-a79b9278bf10'
+  const xId = "c8087bf5-e192-4624-bc68-c0da149e0d4d"
+  const hbbcCupId = 'b5cede54-a43f-4cf3-b768-8a9cb2438451'
+  const seniorHobsonsBayCupId = 'fcd673f1-d28d-471c-aa67-47ca6f2152e6'
+  await fetchMe(seniorHobsonsBayCupId);
   // Senior
-  await fetchMe(cjsPurdyCupSeniorID);
+  // await fetchMe(SeniorWesternMasterID);
 }
 
 main();
